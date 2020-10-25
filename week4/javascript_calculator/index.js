@@ -12,12 +12,12 @@ function subtractTwoNumbers(num1, num2){
     return "Subtracting Number1 and Number 2 = " + (num1 - num2)
 }
 
-function multiplyingTwoNumbers(num1, num2){
-    return "Multiplying Number1 with Number2 = " (num1 * num2)
+function multiplyTwoNumbers(num1, num2){
+    return "Multiplying Number1 with Number2 = " + (num1 * num2)
 }
 
 function divideTwoNumbers(num1, num2){
-    return "Dividing Number1 and Number2 = " (num1 / num2)
+    return "Dividing Number1 and Number2 = " + (num1 / num2)
 }
 
 
