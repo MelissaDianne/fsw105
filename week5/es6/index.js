@@ -1,37 +1,43 @@
-const nameOwner = "John"
+//PART ONE
+let nameOwner = "John"
 let age = 101
 
 function runForLoop(pets) {
     let petObjects = []
     for (let i = 0; i < pets.length; i++) {
         let pet = { type: pets[i] }
-        name;
+            let name;
         if (pets[i] === "cat") {
             name = "fluffy"
         } else {
             name = "Spot"
         }
-        console.log("pet name", name)
-        pet.name = name
-        petObjects.push(pet)
+        console.log("pet name: ", name)
+        pet.name = petObjects.push(pet)
     }
-    console.log("man name ", nameOwner)
+    console.log("man name: ", nameOwner)
     return petObjects
 };
 
 
 runForLoop(["cat", "dog"]);
+ ;
+;
 
 
 //PART TWO
 
-const carrots = ["bright orange", "ripe", "rotten"]
+const carrots = ["bright orange", "ripe", "rotten"];
 
-function mapVegetables(arr) {
-    return arr.map(function(carrot){
-        return {type: "carrot", name: carrot}
-    })
-}
+mapVegetables = arr =>
+     arr.map(carrot => 
+        ({ type: "carrot", name: carrot})
+    );
+
+
+console.log(mapVegetables([carrots]));
+
+
 
 //PART THREE
 
@@ -42,33 +48,41 @@ const people = [
     {name: "Bowser", friendly: false}
 ]
 
-function filterForFriendly(arr){
-    return arr.filter(function(person) {
-        return person.friendly
-    })
-}
+const filterForFriendly = arr =>
+    arr.filter(person => person.friendly)
+    
+
+
+console.log(filterForFriendly(people));
 
 
 //PART FOUR
 
-function doMathSum(a, b){
-    return a + b
-}
-var produceProduct = function (a,b) {
-    return a * b
-}
+const doMathSum = (a, b) => a + b
+
+const produceProduct = (a, b) => a * b
+
+console.log(doMathSum(5,2))
+console.log(produceProduct(5,2))
+
 
 //PART FIVE
 
-// write a printString function that takes firstName, lastName, and age as parameters and returns a string like the following:
-// firstName should default to "Jane"
-// lastName should default to "Doe"
-// age should default to 100
+ let a = "Jane"
+ let b = "Doe"
+ let c = 100
+
+ console.log("Hi " + a + " " + b + ", how does it feel to be " + c + '?')
 
 
 //PART SIX
 
-// Use template literals to build the string from #5
+
+const printString = (a, b, c) => `Hi ${a} ${b}, how does it feel to be ${c}?`
+
+console.log(printString("Jane", "Doe", 100))
+
+
 
 //PART SEVEN
 
@@ -91,22 +105,23 @@ const animals = [
 }
 ];
 
-function filterForDogs(arr) {
-    return arr.filter(animal => {
+ const filterForDogs = (arr) => 
+    arr.filter(animal => {
         if (animal.type === "dog") {
             return true 
         } else { 
             return false
         }
-        }
     })
 
 
+console.log(filterForDogs(animals));
+
 //PART EIGHT
 
-// Hi Janice!
+const location = "Hawaii"
+const name = "Janice"
 
-// Welcome to Hawaii.Hawaii
+console.log("Hi " + name + "! " + "\n" + "Welcome to " + location + "." + "\n" + "I hope you enjoy your stay." + "\n" + 
+"Please ask the president of " + location + " if you need anything!")
 
-// I hope you enjoy your stay.
-// Please ask the president of Hawaii if you need anything.
